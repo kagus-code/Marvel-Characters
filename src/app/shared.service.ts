@@ -6,12 +6,26 @@ import {map} from 'rxjs/operators'
   providedIn: 'root'
 })
 export class SharedService {
-PUBLIC_KEY = '20e7d5df4963766c1e97bf7b3795b85c';
-HASH = 'eeb524518616b326afab41cd508568ffce291f8a';
-API_URL = `https:gateway.marvel.com/v1/public/characters?ts=1&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}`;
+PUBLIC_KEY='20e7d5df4963766c1e97bf7b3795b85c';
+HASH='eeb524518616b326afab41cd508568ffce291f8a';
+today: number = Date.now();
 
-  constructor(private http:HttpClient) { }
+API_URL=`https:gateway.marvel.com/v1/public/characters?events=29&apikey=${this.PUBLIC_KEY}&hash=${this.HASH}&limit=50`;
+
+
+
+
+
+
+
+
+
+
+  constructor(private http:HttpClient,
+    ) { }
   getAllCharacters():Observable<any[]>{
-    return this.http.get<any[]>(this.API_URL).pipe(map((data: any)=>data));
+    return this.http.get<any[]>(this.API_URL).pipe(map((data: any)=>data.data.results));
   }
+
+
 }

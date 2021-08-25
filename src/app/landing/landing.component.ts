@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private service: SharedService,
+    
+  ) { }
 
+  allCharacters!: Observable<any>;
+  
   ngOnInit(): void {
+    this.getCharacters()
+
+
   }
 
+   getCharacters(){
+    this.allCharacters = this.service.getAllCharacters();
+    
+    
+  }
 }
