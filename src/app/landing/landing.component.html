@@ -4,31 +4,24 @@
     <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="fw-light">Marvel Characters</h1>
       <p class="lead text-muted">This is a simple WebApp that utilises the <a href="https://developer.marvel.com/" target="_blank">Marvel Api</a> To display marvel characters <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-      </p>
+             </p>
     </div>
   </div>
 </section>
 
 
-
-
-
-
-
-
-<div class="container ">
+<div class="container">
 <div class="row">
-  <div class="col-md-4" *ngFor="let character of allCharacters | async">
-  <div class="card mb-4"  >
+  <div class="col-md-6 col-lg-4" *ngFor="let character of allCharacters | async" style="padding: 10px;">
+  <div class="card" >
     <div class="image">
-      <img src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.name}}"/>
+      <img class="img-fluid" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="{{character.name}}"/>
     </div>
     <div class="details">
       <div class="center">
         <h1>{{character.name}}<br><span>Appears in {{character.comics.available}} comics</span></h1>
-        
-        
+
+        <a href="{{character.urls[0].url}}" target="_blank" class="btn btn-secondary my-2">Details</a>
       </div>
     </div>
   </div>
