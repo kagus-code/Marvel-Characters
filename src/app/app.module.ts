@@ -7,8 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 import { FooterComponent } from './footer/footer.component';
 import {SharedService} from './shared.service';
-import { NgProgressModule } from '@ngx-progressbar/core';
-import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+
 
 
 
@@ -29,8 +28,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+
 
   ],
   providers: [SharedService],
