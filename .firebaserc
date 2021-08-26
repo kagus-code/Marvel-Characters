@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "marvelapp-217ab"
-  }
+    "default": "marvelapp-217ab",
+    "avengers": "marvelapp-217ab"
+  },
+  "targets": {}
 }
