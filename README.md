@@ -1,27 +1,61 @@
-# Marvel
+# Marvel-Characters Web App
+
+#### This is a simple WebApp that utilises the Marvel Api To display marvel characters , 26/08/2021
+
+#### By **Eston Kagwima**
+
+## Descriptiona
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup/Installation Requirements
 
-## Code scaffolding
+- Clone the repository
+- Change directory to the project directory
+- Open project on VSCode
+- Run `npm install` before serving the application to install the packages and dependancies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Running unit tests
+Before you start, you must acquire a developer key from Marvel Developer Portal. After you get one, replace the following variables on sharedservice.ts
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+PUBLIC_KEY='<your_public_key>';
+HASH='<your_private_key>';
+###### Development server
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Further help
+###### Code scaffolding
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+#### Build
+
+- Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Technologies Used
+
+- Angular
+- typescript
+- HTML
+- CSS
+- Bootstrap
+
+## link to live site 
+https://marvelapp-217ab.web.app/
+## Support and contact details
+
+| Eston | ekagwima745@gmail.com |
+| ----- | --------------------- |
+
+### License
+
+License
+[MIT License](https://choosealicense.com/licenses/mit/)
+Copyright (c) 2021 Eston Kagwima
